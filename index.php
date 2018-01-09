@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
 //1525 first GIT repo
-
+$rando = rand(1,2);
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Change this to your name, not "your name" but your name right?</title>
+        <title>Loren Wetzel</title>
     </head>
     <body>
 
@@ -17,7 +17,8 @@
 
                 <label>Stuff</label>
                 <input type="number" name="anum"><br>
-
+                
+                <input type="hidden" name="secret" value="<?php echo $rando ?>">
 
                 <label>&nbsp;</label>
                 <input type="submit" value="Send"><br>
