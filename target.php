@@ -3,7 +3,7 @@ $things = filter_input(INPUT_GET, 'things');
 $stuff = filter_input(INPUT_GET, 'anum', FILTER_VALIDATE_INT);
 $password = filter_input(INPUT_GET, 'secret', FILTER_VALIDATE_INT);
 
-if ($things === $password){
+if ($stuff === $password){
     $message = 'you guessed it!';
 }else {
     $message = 'nope';
@@ -29,9 +29,9 @@ var_dump($password);
         <h2>
             <?php
             echo $message
-              ?>
+            ?>
         </h2>
         
-        <p><?php echo $stuff ?></p>
+        <p><?php echo $password ?></p>
     </body>
-    
+</html>
